@@ -1,4 +1,6 @@
-# Lloyd Jefferson's porfolio project by team 17 (not the one, who made Worms games :) )
+# Lloyd Jefferson's porfolio project by GoIT team #17
+
+Live page: https://annabryzghalova.github.io/goit25-team17-portfolio/
 
 # Docs on the project:
 
