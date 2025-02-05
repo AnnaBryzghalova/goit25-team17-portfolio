@@ -4,11 +4,13 @@
   | default @import url()
   |============================
 */
-/* Fonts */
+
+/* Fonts
+TODO: connect fonts via @font-face */
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Common styles */
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
