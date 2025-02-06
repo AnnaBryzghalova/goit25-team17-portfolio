@@ -18,3 +18,5 @@ TODO: connect fonts via @font-face */
 /* Sections style */
 @import url('./header.css');
 @import url('./footer.css');
+@import url(./04-projects.css);
+
