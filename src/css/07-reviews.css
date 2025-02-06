@@ -1,1 +1,31 @@
-/* 07-reviews */
+ul.reviews {
+  display: flex;
+  gap: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+ul.reviews > li {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+}
+
+ul.reviews > li > img {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+ul.reviews > li > h3 {
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+ul.reviews > li > p {
+  margin-top: 8px;
+  color: rgba(250, 250, 250, 0.6);
+}
