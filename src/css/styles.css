@@ -17,4 +17,13 @@ TODO: connect fonts via @font-face */
 
 /* Sections style */
 @import url('./header.css');
+
+@import url('./01-hero.css');
+@import url('./02-about-me.css');
+@import url('./03-benefits.css');
+@import url('./04-projects.css');
+@import url('./05-faq.css');
+@import url('./06-covers.css');
+@import url('./07-reviews.css');
+
 @import url('./footer.css');
