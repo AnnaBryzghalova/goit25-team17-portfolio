@@ -1,4 +1,5 @@
 /* Styles for Mobile devices */
+
 .container {
   max-width: 375px;
   min-width: 320px;
@@ -16,7 +17,7 @@
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
