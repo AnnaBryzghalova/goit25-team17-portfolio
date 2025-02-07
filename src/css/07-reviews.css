@@ -1,7 +1,7 @@
 ul.reviews {
   display: flex;
   gap: 16px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: hidden;
   line-height: 150%;
   letter-spacing: -0.02em;
@@ -12,14 +12,25 @@ ul.reviews > li {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
-  min-width: calc(320px - 34px);
-  max-width: calc(375px - 34px);
   flex-basis: 100%;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
   ul.reviews > li {
-    width: 344px;
+    min-width: calc(320px - 32px);
+    max-width: calc(375px - 32px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  ul.reviews > li {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  ul.reviews > li {
+    flex-basis: calc((100% - 48px) / 4);
   }
 }
 
@@ -34,7 +45,6 @@ ul.reviews > li > h3 {
   margin-top: 32px;
   font-weight: 600;
   font-size: 20px;
-  color: #fafafa;
 }
 
 ul.reviews > li > p {
@@ -42,33 +52,52 @@ ul.reviews > li > p {
   color: rgba(250, 250, 250, 0.6);
 }
 
-.side-arrows > div {
-  border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
-  padding: 18px;
-  width: 68px;
-  height: 68px;
+.side-arrows {
+  display: flex;
+  justify-self: center;
+  gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .side-arrows {
+    gap: 20px;
+  }
 }
 
 .side-arrows-left,
 .side-arrows-right {
   background: none;
   border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
-  padding: 18px;
+  border-radius: 50%;
+  padding: 17px;
   width: 68px;
   height: 68px;
-  background: url('/images/sprite.svg#icon-arrow-right');
-  /* <svg>
-  <use xlink:href="/images/sprite.svg#icon-arrow-right"></use>
-</svg> */
+}
+
+.side-arrows-left svg,
+.side-arrows-right svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .side-arrows-left svg,
+  .side-arrows-right svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .side-arrows-left {
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
 
 .side-arrows-left:disabled,
 .side-arrows-right:disabled {
   border-color: rgba(250, 250, 250, 0.2);
+}
+
+.side-arrows-left:disabled svg,
+.side-arrows-right:disabled svg {
+  stroke: #3b3b3b;
 }
