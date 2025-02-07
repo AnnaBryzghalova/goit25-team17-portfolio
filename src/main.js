@@ -1,9 +1,9 @@
-// import header from './js/header';
-// import hero from './js/01-hero';
-// import about from './js/02-about-me';
-// import benefits from './js/03-benefits';
-// import projects from './js/04-projects';
-// import faq from './js/05-faq';
-// import covers from './js/06-covers';
-// import reviews from './js/07-reviews';
-// import footer from './js/footer';
+import './js/header';
+import './js/01-hero';
+import './js/02-about-me';
+import './js/03-benefits';
+import './js/04-projects';
+import './js/05-faq';
+import './js/06-covers';
+import './js/07-reviews';
+import './js/footer';
