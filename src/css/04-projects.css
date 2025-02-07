@@ -1,3 +1,10 @@
+:root{
+    --black:#1c1d20;
+    --white: #fafafafa; 
+    --letterspacing: -0.02em; 
+
+}
+
 .projects-container {
     margin-bottom: 64px;
     margin-left: auto;
@@ -5,12 +12,191 @@
     min-width: 0;
 }
 
+<<<<<<< Updated upstream
 .projects-title {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+=======
+.projects-container-program-img.swiper-slide {
+display: flex;
+flex-direction:column ;
+margin-bottom: 32px;
+}
+
+.projects-container-program-list{
+padding: 32px;
+border-radius: 24px 24px 0 0 ;
+background-color: var(--white);
+width: 344px;
+height: 437px;
+}
+
+.projects-title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letterspacing);
+>>>>>>> Stashed changes
     text-transform: uppercase;
     color: rgba(250, 250, 250, 0.4);
     margin-bottom: 32px;
+<<<<<<< Updated upstream
+=======
+}
+
+.projects.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 96px;
+}
+
+.projects-link{
+    display: block;
+    align-items: center;
+}
+
+.projects-button{
+border: 1px solid rgba(28, 29, 32, 0.2);
+border-radius: 60px;
+height: 45px;
+font-weight: 500;
+font-size: 16px;
+letter-spacing:var(--letterspacing);
+color:var(--black);
+}
+
+.react{
+    width: 80px;
+}
+
+.js{
+    width: 57px;
+}
+
+.node {
+    width: 94px;
+}
+
+.git{
+    width: 63px;
+}
+
+.projects-article{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color:var(--black);
+    margin-bottom: 32px;
+}
+
+.projects-button-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    width: 140px;
+    height: 45px;
+    background: #ed3b44;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: var(--letterspacing);
+    
+}
+
+.projects-images-continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 16px;
+    border-radius: 0 0 24px 24px;
+    width: 350px;
+    height: 400px;
+    background: #242537;
+}
+
+.projects-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+
+.projects-swiper-icon{
+    display: block;
+    text-align: center;
+    border: 1px solid (250, 250, 250, 0.2);
+    border-radius: 60px;
+    width: 52px;
+    height: 52px;
+    stroke-width: 2px;
+    stroke: #3b3b3b;
+}
+.left{
+    transform: rotate(-180deg);
+}
+
+.projects-swiper-container{
+    width: 100%;
+}
+@media screen and(min-width: 768px) {
+    .projects-container-program-list{
+        width: 700px;
+        height: 566px;
+        padding: 65px;
+    }
+    .projects-container-program-img{
+        width: 700px;
+        height: 625px;
+        padding: 120px 45px;
+    }
+    .projects-button-link{
+        width: 180px;
+        height: 55px;
+        margin-bottom: 64px;
+    }
+    .projects-list{
+        margin-bottom: 165px;
+    }
+    .projects-article{
+        font-size: 45px;
+    }
+    .projects-button-link{
+        width: 180px;
+        height: 70px;
+    }
+    .projects-icon{
+        gap: 20px;
+    }
+    .projects-swiper-icon{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and(min-width:1440px) {
+    .projects-container-program-img{
+        display: flex;
+        font-display: row;
+        margin-bottom: 64px;
+    }
+.projects-container-program-list{
+    padding: 64px;
+    border-radius: 24px 0 0 24px;
+    width: 625px;
+    height: 690px;
+}
+.projects-images-continer{
+    border-radius: 0 24px 24px 0;
+    width: 625px;
+    height: 690px;
+    padding: 120px 37px;
+}
+.projects-list{
+    margin-bottom: 225px;
+}
+>>>>>>> Stashed changes
 }
