@@ -30,3 +30,8 @@ section h2 {
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
 }
+
+svg {
+  fill: none;
+  stroke: #fff;
+}
