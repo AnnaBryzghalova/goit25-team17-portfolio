@@ -3,7 +3,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  font-optical-sizing: auto;
   color: #fafafa;
 
   min-height: 100vh;
@@ -24,7 +23,7 @@ body {
   overflow: hidden;
 }
 
-section h2 {
+h2 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -34,4 +33,40 @@ section h2 {
 svg {
   fill: none;
   stroke: #fff;
+}
+
+#about-me,
+#benefits,
+#projects,
+#faq,
+#covers,
+#reviews,
+#footer {
+  margin-top: 64px;
+}
+
+@media only screen and (min-width: 768px) {
+  #benefits,
+  #projects,
+  #faq,
+  #covers,
+  #reviews,
+  #footer {
+    margin-top: 96px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #about-me {
+    margin-top: 96px;
+  }
+
+  #benefits,
+  #projects,
+  #faq,
+  #covers,
+  #reviews,
+  #footer {
+    margin-top: 164px;
+  }
 }
