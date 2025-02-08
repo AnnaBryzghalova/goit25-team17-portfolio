@@ -1,23 +1,14 @@
-const reviewsList = document.querySelector('ul.reviews');
+const reviewsList = document.querySelector('#reviews .swiper-wrapper');
 
 import { fetchResponses, sendCooperationRequest } from './goit-api';
 import { renderReviewItems } from './render-functions';
+import { initSwiper } from './swiper-api';
+
 try {
   const response = await fetchResponses();
   reviewsList.innerHTML = renderReviewItems(response);
+  initSwiper('reviews', false);
 } catch (error) {
-  console.log(error);
+  console.error('Error fetching reviews:', error);
+  reviewsList.innerHTML = '<li class="swiper-slide">Not found</li>';
 }
-
-// core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation],
-});

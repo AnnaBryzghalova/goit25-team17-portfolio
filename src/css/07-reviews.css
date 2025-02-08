@@ -1,4 +1,4 @@
-ul.reviews {
+.swiper-wrapper {
   display: flex;
   gap: 16px;
   flex-wrap: nowrap;
@@ -6,9 +6,10 @@ ul.reviews {
   line-height: 150%;
   letter-spacing: -0.02em;
   margin: 32px 0;
+  min-width: 0;
 }
 
-ul.reviews > li {
+.swiper-wrapper > .swiper-slide {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
@@ -16,31 +17,31 @@ ul.reviews > li {
 }
 
 @media screen and (min-width: 768px) {
-  ul.reviews > li {
+  .swiper-wrapper > .swiper-slide {
     min-width: calc((100% - 16px) / 2);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  ul.reviews > li {
+  .swiper-wrapper > .swiper-slide {
     min-width: calc((100% - 48px) / 4);
   }
 }
 
-ul.reviews > li > img {
+.swiper-wrapper > .swiper-slide > img {
   border-radius: 10px;
   width: 48px;
   height: 48px;
   object-fit: cover;
 }
 
-ul.reviews > li > h3 {
+.swiper-wrapper > .swiper-slide > h3 {
   margin-top: 32px;
   font-weight: 600;
   font-size: 20px;
 }
 
-ul.reviews > li > p {
+.swiper-wrapper > .swiper-slide > p {
   margin-top: 8px;
   color: rgba(250, 250, 250, 0.6);
 }
@@ -57,8 +58,8 @@ ul.reviews > li > p {
   }
 }
 
-.side-arrows-left,
-.side-arrows-right {
+.swiper-button-prev,
+.swiper-button-next {
   background: none;
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 50%;
@@ -67,30 +68,30 @@ ul.reviews > li > p {
   height: 68px;
 }
 
-.side-arrows-left svg,
-.side-arrows-right svg {
+.swiper-button-prev svg,
+.swiper-button-next svg {
   width: 24px;
   height: 24px;
 }
 
 @media screen and (min-width: 768px) {
-  .side-arrows-left svg,
-  .side-arrows-right svg {
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
     width: 32px;
     height: 32px;
   }
 }
 
-.side-arrows-left {
+.swiper-button-prev {
   transform: rotate(180deg);
 }
 
-.side-arrows-left:disabled,
-.side-arrows-right:disabled {
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
   border-color: rgba(250, 250, 250, 0.2);
 }
 
-.side-arrows-left:disabled svg,
-.side-arrows-right:disabled svg {
+.swiper-button-prev:disabled svg,
+.swiper-button-next:disabled svg {
   stroke: #3b3b3b;
 }
