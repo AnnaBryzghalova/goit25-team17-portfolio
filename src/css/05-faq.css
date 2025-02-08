@@ -30,6 +30,8 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--main-white);
+
+  text-transform: none;
 }
 
 .ac .ac-panel {
@@ -68,10 +70,6 @@
 
 /* desktop */
 @media only screen and (min-width: 1440px) {
-  .faq-header-main {
-    margin-left: 20px;
-  }
-
   .faq {
     padding: 40px 0;
   }
