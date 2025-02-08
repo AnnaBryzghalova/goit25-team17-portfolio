@@ -1,1 +1,151 @@
 /* 01-hero */
+.hero-bg {
+  width: 100%;
+  background-image: url(../images/hero/background-mob.png);
+  background-repeat: repeat-y;
+  background-position: left;
+  background-size: 100% 1px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: url(../images/hero/background-mob@2x.png);
+    background-size: 90% 1px;
+  }
+}
+
+.hero-cont {
+  padding-top: 281px;
+  padding-bottom: 32px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  color: var(--main-white);
+  margin-bottom: 212px;
+}
+
+.ul-hero {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.soc-networks-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--main-white);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+}
+
+.soc-networks-items:hover {
+  border-color: #fafafa;
+}
+
+.git-hub {
+  width: 37px;
+  height: 37px;
+}
+
+.email-link {
+  width: 178px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  .ul-hero {
+    justify-content: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-bg {
+    background-image: url(../images/hero/background-tab.png);
+    background-size: 581px 1px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bg {
+      background-image: url(../images/hero/background-tab@2x.png);
+      background-size: 581px 1px;
+    }
+  }
+
+  .hero-cont {
+    padding-top: 300px;
+  }
+
+  .hero-title {
+    font-size: 90px;
+    margin-bottom: 187px;
+    letter-spacing: -0.03em;
+  }
+
+  .ul-hero {
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  .soc-networks-items {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .git-hub {
+    width: 55px;
+    height: 55px;
+  }
+
+  .email-link {
+    width: 223px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-position-nav {
+    width: 100%;
+  }
+
+  .hero-bg {
+    background-image: url(../images/hero/background-desk.png);
+    background-size: 728px 1px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bg {
+      background-image: url(../images/hero/background-desk@2x.png);
+      background-size: 728px 1px;
+    }
+  }
+
+  .hero-title {
+    font-size: 90px;
+    max-width: 1084px;
+    margin-bottom: 243px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
