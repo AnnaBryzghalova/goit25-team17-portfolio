@@ -1,7 +1,7 @@
 ul.reviews {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow: hidden;
   line-height: 150%;
   letter-spacing: -0.02em;
@@ -12,25 +12,18 @@ ul.reviews > li {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
-  flex-basis: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  ul.reviews > li {
-    min-width: calc(320px - 32px);
-    max-width: calc(375px - 32px);
-  }
+  min-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   ul.reviews > li {
-    flex-basis: calc((100% - 16px) / 2);
+    min-width: calc((100% - 16px) / 2);
   }
 }
 
 @media screen and (min-width: 1440px) {
   ul.reviews > li {
-    flex-basis: calc((100% - 48px) / 4);
+    min-width: calc((100% - 48px) / 4);
   }
 }
 
