@@ -11,25 +11,26 @@
   background-color: #ed3b44;
 }
 
-.benefits {
-  padding: 32px 0;
+.benefits-svg-content svg {
+  width: 24px;
+  height: 24px;
 }
 
-.benefits-title {
+.benefits-title{
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   margin-bottom: 32px;
-  color: rgba(250, 250, 250, 0.4);
+  color:rgba(250, 250, 250, 0.4)
 }
 
 .benefits-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 32px 0;
 }
 
 .benefits-button {
