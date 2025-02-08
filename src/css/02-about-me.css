@@ -47,10 +47,117 @@
 
 
 /* Опис про себе, мого досвіду та досягнення у навчанні(освіта) */
+.description-items{
+    max-width: 1376px;
+    height: 608px;
+    margin-top: 96px;
+    margin-bottom: 192px;
+}
+
+.accord-title{
+    max-width: 1376px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+   
+        
+}
+
+.title-role,
+.title-education{
+    
+    margin-top: 32px;
+    
+}
+
+.item-my-description,
+.item-my-role,
+.item-my-education{
+    max-width: 1376px;
+    border-bottom: 1px solid #FAFAFA33;
+    
+}
+
+.title-description,
+.title-role,
+.title-education{
+    
+    color: #FAFAFA66;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 24px;
+    
+}
 
 
 
+.accord-panel-first{
+    width: 612px;
+    height: 320px;
+    margin: 8px 68px 32px 696px;
+   
+}
 
+.accord-panel{
+    width: 622px;
+    /* height: 72px; */
+    margin: 8px 68px 32px 696px;
+   
+}
+
+.accord-panel-role{
+    width: 284px;
+    margin: 8px 396px 32px 696px;
+}
+
+.accord-panel-education{
+    width: 465px;
+    margin: 8px 215px 32px 696px;
+}
+
+.text-description-one{
+    width: 622px;
+    height: 120px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-sizing: content-box;
+    padding-bottom: 32px;
+}
+
+.text-description-two{
+    width: 622px;
+    height: 168px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-sizing: content-box;
+    
+}
+
+.style-text-role,
+.style-text-education{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.btn-accordion-description,
+.btn-accordion-role,
+.btn-accordion-education{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px;
+    border-color: #FAFAFA33;
+    padding: 10px;
+    gap: 10px;
+}
 
 
 
@@ -66,7 +173,7 @@
 
 .skills-items{
    display: flex;
-
+    /* margin-top: 96px; */
 }
 
 .btn-slide{
