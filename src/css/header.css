@@ -37,12 +37,17 @@
 
 .menu-center-list {
   width: auto;
-  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
   position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
 }
 
 .menu-center-list.is-open {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .menu-center-item {
