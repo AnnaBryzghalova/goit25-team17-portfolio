@@ -10,21 +10,131 @@
     />
     <title>Lloyd Jefferson's Portfolio</title>
     <script type="module" crossorigin src="/goit25-team17-portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit25-team17-portfolio/assets/index-DhE4zpBq.css">
+    <link rel="stylesheet" crossorigin href="/goit25-team17-portfolio/assets/index-CoIocunr.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav"></nav>
+    <header class="header container">
+  <div class="header-left">
+    <img
+      srcset="/goit25-team17-portfolio/assets/header_logo-BcRfU5S5.png 1x, /goit25-team17-portfolio/assets/header_logo@2x-9C1GhDcy.png 2x"
+      src="../images/header/header_logo.png"
+      alt="Photo_Jefferson"
+    />
+    <svg class="icon-header-logo" width="84px" height="19px">
+      <use href="../images/sprite.svg#icon-jefferson"></use>
+    </svg>
   </div>
+  <div class="header-right">
+    <svg class="header-icon-burger" width="28px" height="28px">
+      <use href="../images/sprite.svg#icon-menu-burger"></use>
+    </svg>
+  </div>
+
+  <nav class="menu-center">
+    <p class="menu-center-open">Menu</p>
+    <ul class="menu-center-list">
+      <li class="menu-center-item">
+        <a href="#about-me">About me</a>
+      </li>
+      <li class="menu-center-item">
+        <a href="#benefits">Benefits</a>
+      </li>
+      <li class="menu-center-item">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="menu-center-item">
+        <a href="#faq">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+
+  <a class="btn-menu-tablet" href="#footer"> Order the project </a>
 </header>
+
+<!-- MOBILE-BACKDROP -->
+<div class="modal-header">
+  <div class="header-menu">
+    <button
+      class="modal-btn-close"
+      id="close-btn"
+      type="button"
+      aria-label="close modal window"
+    >
+      <svg class="menu-icon-close" width="28px" height="28px">
+        <use href="../images/sprite.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a href="#about-me">About me</a>
+      </li>
+      <li class="menu-item">
+        <a href="#benefits">Benefits</a>
+      </li>
+      <li class="menu-item">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="menu-item">
+        <a href="#faq">FAQ</a>
+      </li>
+    </ul>
+    <a class="btn-menu" href="#footer">Order the project</a>
+  </div>
+</div>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section id="hero">
-  <div class="container">
-    <h1>Hello. I’m Fullstack developer Lloyd Jefferson.</h1>
+      <section class="hero" id="hero">
+  <div class="container hero-bg">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Hello. <br />
+        I&prime;m fullstack developer Lloyd Jefferson.
+      </h1>
+
+      <nav class="hero-navigation">
+        <ul class="hero-social-list">
+          <li>
+            <a
+              class="social-link instagram"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              >IG
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link facebook"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              >FB
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link youtube"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              >YT
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link github"
+              href="https://github.com/AnnaBryzghalova/goit25-team17-portfolio"
+              target="_blank"
+              >GH
+            </a>
+          </li>
+          <li>
+            <a class="social-link email" href="mailto:lloydjefferson@gmail.com"
+              >lloydjefferson@gmail.com
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </section>
 
@@ -42,7 +152,7 @@
         <li class="benefits-item">
           <div class="benefits-svg-content">
             <svg>
-              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-gTD_49y0.svg#icon-user"></use>
+              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-BvaLSyK3.svg#icon-user"></use>
             </svg>
           </div>
           <div class="benefits-text-content">
@@ -56,7 +166,7 @@
         <li class="benefits-item">
           <div class="benefits-svg-content">
             <svg>
-              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-gTD_49y0.svg#icon-chat-message"></use>
+              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-BvaLSyK3.svg#icon-chat-message"></use>
             </svg>
           </div>
           <div class="benefits-text-content">
@@ -70,7 +180,7 @@
         <li class="benefits-item">
           <div class="benefits-svg-content">
             <svg>
-              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-gTD_49y0.svg#icon-brush"></use>
+              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-BvaLSyK3.svg#icon-brush"></use>
             </svg>
           </div>
           <div class="benefits-text-content">
@@ -84,7 +194,7 @@
         <li class="benefits-item">
           <div class="benefits-svg-content">
             <svg>
-              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-gTD_49y0.svg#icon-hourglass"></use>
+              <use class="benefits-icons" href="/goit25-team17-portfolio/assets/sprite-BvaLSyK3.svg#icon-hourglass"></use>
             </svg>
           </div>
           <div class="benefits-text-content">
