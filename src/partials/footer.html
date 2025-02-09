@@ -2,10 +2,23 @@
   <div class="container footer-container">
     <h2 class="footer-title">
       <picture>
-        <source srcset="./images/footer/photo-mob.png 1x, ./images/footer/photo-mob@2x.png 2x" media="(max-width: 767px)">
-        <source srcset="./images/footer/photo.png 1x, ./images/footer/photo@2x.png 2x" media="(min-width: 768px)">
+        <source
+          srcset="
+            ./images/footer/photo-mob.png    1x,
+            ./images/footer/photo-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="./images/footer/photo.png 1x, ./images/footer/photo@2x.png 2x"
+          media="(min-width: 768px)"
+        />
 
-        <img class="footer-title__img" src="./images/footer/photo-mob.png" alt="My photo">
+        <img
+          class="footer-title__img"
+          src="./images/footer/photo-mob.png"
+          alt="My photo"
+        />
       </picture>
 
       Let's <span class="footer-title--accent">work</span> together
@@ -13,10 +26,23 @@
 
     <form class="form-cooperation">
       <label class="form-cooperation__label">
-        <input class="form-cooperation__input form-cooperation__input--check" type="email" name="userEmail" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" required>
+        <input
+          class="form-cooperation__input form-cooperation__input--check"
+          type="email"
+          name="userEmail"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          placeholder="clients@gmail.com"
+          required
+        />
       </label>
       <label class="form-cooperation__label">
-        <input class="form-cooperation__input" type="text" name="userComment" placeholder="comments" required>
+        <input
+          class="form-cooperation__input"
+          type="text"
+          name="userComment"
+          placeholder="comments"
+          required
+        />
       </label>
       <button class="form-cooperation__btn">Send</button>
     </form>
@@ -24,10 +50,14 @@
     <address class="footer-contacts">
       <ul class="contacts">
         <li class="contacts__item">
-          <a class="contacts__link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+          <a class="contacts__link" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
         </li>
         <li class="contacts__item">
-          <a class="contacts__link" href="tel:+3801111111111">+380 11 1111 11 11</a>
+          <a class="contacts__link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
         </li>
       </ul>
     </address>
