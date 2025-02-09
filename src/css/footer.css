@@ -1,1 +1,275 @@
 /* footer */
+
+/* ------------ MOBILE ------------ */
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-title {
+  max-width: 274px;
+  margin-bottom: 63px;
+
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  user-select: none;
+}
+.footer-title__img {
+  width: 44px;
+  height: 44px;
+  margin-right: 8px;
+
+  float: left;
+}
+.footer-title--accent {
+  color: #ed3b44;
+}
+
+.form-cooperation {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-cooperation__label {
+  margin-bottom: 16px;
+}
+.form-cooperation__label:last-of-type {
+  margin-bottom: 32px;
+}
+
+.form-cooperation__input {
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-bottom: 1px solid #fafafa33;
+  padding: 0;
+
+  background-color: transparent;
+
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+
+  text-overflow: ellipsis;
+
+  transition: border-color 250ms ease;
+}
+.form-cooperation__input:focus {
+  border-color: #fafafa80;
+  outline: none;
+}
+.form-cooperation__input:not(:placeholder-shown) {
+  border-color: #fafafa80;
+}
+.form-cooperation__input--check:focus:valid {
+  border-color: #3cbc81;
+}
+
+.form-cooperation__input--check:focus:invalid {
+  border-color: #ed3b44;
+}
+.form-cooperation__input::placeholder {
+  color: #fafafa99;
+}
+.form-cooperation__btn {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  margin-bottom: 64px;
+
+  background-color: #ed3b44;
+
+  color: #fafafa;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02em;
+
+  user-select: none;
+
+  transition: background-color 250ms ease;
+}
+.form-cooperation__btn:hover,
+.form-cooperation__btn:focus {
+  background-color: #e0373f;
+}
+
+.footer-contacts {
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4px;
+}
+.contacts__item {
+}
+.contacts__link {
+  display: block;
+  border-radius: 60px;
+  border: 1px solid #fafafa33;
+  padding: 10px 12px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  transition: border-color 250ms ease;
+
+  user-select: none;
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  border-color: #fafafa;
+}
+
+.footer-overlay {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/footer/background.png);
+  background-repeat: repeat-y;
+
+  position: absolute;
+  top: 0;
+  right: -77.3%;
+  z-index: -10;
+}
+@media screen and (min-resolution: 192dpi) {
+  .footer-overlay {
+    background-image: url(../images/footer/background@2x.png);
+  }
+}
+/* ----------- /MOBILE ------------ */
+
+/* ------------ TABLET ------------ */
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 169px;
+  }
+
+  .footer-title {
+    max-width: 542px;
+    margin-bottom: 18px;
+
+    font-size: 64px;
+    line-height: 70px;
+  }
+  .footer-title__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+  .form-cooperation {
+    margin-bottom: 18px;
+
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-cooperation__label {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+  .form-cooperation__label:last-of-type {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .form-cooperation__input {
+    width: 245px;
+  }
+  .form-cooperation__btn {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+  }
+
+  .contacts {
+    column-gap: 8px;
+  }
+  .contacts__link {
+    padding: 18px 32px;
+
+    font-size: 16px;
+  }
+  .footer-overlay {
+    right: -74.22%;
+  }
+}
+/* ----------- /TABLET ------------ */
+/* ------------ DESKTOP ------------ */
+@media only screen and (min-width: 1440px) {
+  .footer-container {
+    max-width: 1112px;
+  }
+
+  .form-cooperation__label:last-of-type {
+    margin-right: 86px;
+  }
+
+  .form-cooperation__input {
+    width: 390px;
+  }
+
+  .footer-overlay {
+    right: -72.22%;
+  }
+}
+/* ----------- /DESKTOP ------------ */
+/* ------------ ERROR MESSAGE ------------ */
+.error-message {
+  width: 150px;
+  height: 40px;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+
+  background-color: #ed3b44;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fafafa;
+
+  position: fixed;
+  top: -40px;
+  right: 50px;
+
+  animation-name: sun-rise;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes sun-rise {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(40px);
+  }
+  90% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .error-message {
+    width: 200px;
+
+    right: 100px;
+  }
+}
+/* ----------- /ERROR MESSAGE ------------ */
