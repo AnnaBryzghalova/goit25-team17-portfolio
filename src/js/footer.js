@@ -1,3 +1,5 @@
+import iziToast from 'izitoast';
+
 const formCooperationEl = document.querySelector('.form-cooperation');
 
 const postForm = async user => {
@@ -21,12 +23,6 @@ const postForm = async user => {
   return responce.json();
 };
 
-const deleteErorMessage = () => {
-  setTimeout(() => {
-    document.querySelector('.error-message').remove();
-  }, 3000);
-};
-
 const onFormCooperativeSubmit = async event => {
   try {
     event.preventDefault();
@@ -41,13 +37,10 @@ const onFormCooperativeSubmit = async event => {
     console.log(title);
     console.log(message);
   } catch (err) {
-    const errorTemplate = `
-    <div class="error-message">
-      Error: ${err.message}
-    </div>
-`;
-    document.body.insertAdjacentHTML('beforeend', errorTemplate);
-    deleteErorMessage();
+    iziToast.error({
+      title: `Error: ${err.message}`,
+      position: 'topRight',
+    });
   }
 };
 

@@ -1,4 +1,5 @@
 /* footer */
+@import "izitoast/dist/css/iziToast.min.css";
 
 /* ------------ MOBILE ------------ */
 .footer {
@@ -226,50 +227,3 @@
   }
 }
 /* ----------- /DESKTOP ------------ */
-/* ------------ ERROR MESSAGE ------------ */
-.error-message {
-  width: 150px;
-  height: 40px;
-  border-radius: 0 0 5px 5px;
-  padding: 10px;
-
-  background-color: #ed3b44;
-
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fafafa;
-
-  position: fixed;
-  top: -40px;
-  right: 50px;
-
-  animation-name: sun-rise;
-  animation-duration: 3s;
-  animation-timing-function: ease-in;
-  animation-direction: alternate;
-}
-
-@keyframes sun-rise {
-  0% {
-    transform: translateY(0);
-  }
-  10% {
-    transform: translateY(40px);
-  }
-  90% {
-    transform: translateY(40px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .error-message {
-    width: 200px;
-
-    right: 100px;
-  }
-}
-/* ----------- /ERROR MESSAGE ------------ */
