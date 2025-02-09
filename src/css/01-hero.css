@@ -67,7 +67,7 @@
 
 .social-link.email {
   width: auto;
-  padding: 10px 14px;
+  padding: 10px 12px;
   border-radius: 60px;
   font-size: 12px;
 }
@@ -114,6 +114,11 @@
     height: 55px;
     padding: 18px 20px;
   }
+
+  .social-link.email {
+    padding: 18px 24px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -144,6 +149,11 @@
   }
 
   .social-link {
+    font-size: 16px;
     padding: 18px 20px;
+  }
+
+  .social-link.email {
+    padding: 18px 24px;
   }
 }
