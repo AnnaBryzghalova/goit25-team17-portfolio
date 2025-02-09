@@ -1,6 +1,6 @@
 function renderReview({ _id, author, avatar_url, review }) {
   return `
-  <div class="swiper-slide">
+  <li class="swiper-slide">
     <img
      src="${avatar_url}"
       alt="Reviewer ${_id} photo"
@@ -9,7 +9,7 @@ function renderReview({ _id, author, avatar_url, review }) {
     <p class="review">
       ${review}
     </p>
-  </div>
+  </li>
   `;
 }
 
