@@ -11,7 +11,7 @@ const createModal = (title, message) => {
           <use href="../images/sprite.svg#icon-x-close" close></use>
         </svg>
       </button>
-      <h3 class="cooperative-modal__title">${title}</h3>
+      <h2 class="cooperative-modal__title">${title}</h2>
       <p class="cooperative-modal__comment">${message}</p>
     </div>
   </div>
@@ -19,7 +19,7 @@ const createModal = (title, message) => {
   document.body.insertAdjacentHTML('beforeend', modal);
 
   const onBtnCloseClick = event => {
-    if (event.target.hasAttribute('close')) {
+    if (event.target.hasAttribute('close') || event.key === "Escape") {
       document.querySelector('.cooperation-modal-backdrop').remove();
 
       modalEL.removeEventListener('click', onBtnCloseClick);
@@ -28,6 +28,7 @@ const createModal = (title, message) => {
 
   const modalEL = document.querySelector('.js-cooperation-modal-backdrop');
   modalEL.addEventListener('click', onBtnCloseClick);
+  document.addEventListener('keydown', onBtnCloseClick);
 };
 
 const postForm = async user => {
@@ -62,8 +63,6 @@ const onFormCooperativeSubmit = async event => {
     };
 
     const { title, message } = await postForm(user);
-    console.log(title);
-    console.log(message);
 
     createModal(title, message);
 
