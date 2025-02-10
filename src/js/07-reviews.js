@@ -29,6 +29,7 @@ async function reviewsEntryPoint() {
       .querySelector('#reviews .side-arrows')
       .classList.add('visually-hidden');
 
+  reviewsList.style = 'justify-content: center';
     addEventListener('scroll', onScroll);
   }
 }
