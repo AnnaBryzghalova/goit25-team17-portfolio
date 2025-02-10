@@ -1,15 +1,15 @@
 const section = {
   cards: document.querySelectorAll('.marquee-card'),
-  covers: document.querySelector('.covers'),
+  covers: document.querySelector('covers'),
 };
 
-let options = {
+const options = {
   root: null,
   rootMargin: '0px',
   threshold: 0,
 };
 
-let animationCovers = entries => {
+const animationCovers = entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       section.cards.forEach(card => {
@@ -22,5 +22,5 @@ let animationCovers = entries => {
     });
   });
 };
-let observer = new IntersectionObserver(animationCovers, options);
-observer.observe(section.covers);
+const observer = new IntersectionObserver(animationCovers, options);
+observer.observe(covers);
