@@ -81,16 +81,9 @@ svg {
   height: 45px;
   border: none;
   border-radius: 60px;
-
   background-color: #ed3b44;
-
-  color: #fafafa;
-  font-weight: 500;
-  line-height: normal;
   letter-spacing: -0.02em;
-
   user-select: none;
-
   transition: background-color 250ms ease;
 }
 
@@ -123,5 +116,9 @@ svg {
 @media only screen and (min-width: 768px) {
   .link {
     font-size: 16px;
+  }
+
+  .btn-red {
+    height: 55px;
   }
 }

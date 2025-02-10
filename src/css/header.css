@@ -76,7 +76,7 @@
   fill: #fafafa;
 }
 
-.btn-menu-tablet {
+.button-order-project {
   display: none;
   padding: 14px 31px;
 }
@@ -178,8 +178,9 @@
     display: block;
   }
 
-  .btn-menu-tablet {
+  .button-order-project {
     display: block;
+    padding: 18px 24px;
   }
 }
 

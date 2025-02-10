@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalBtnClose = document.querySelector('.modal-btn-close');
   const btnMenu = document.querySelector('.header-icon-burger');
   const menuLinks = document.querySelectorAll('.menu-list a');
-  const btnMenuTablet = document.querySelector('.btn-menu-tablet');
+  const btnOrderProject = document.querySelector('.button-order-project');
   const btnMenuModal = document.querySelector('.btn-menu');
   const menuCenterOpen = document.querySelector('.menu-center-open');
   const menuCenterList = document.querySelector('.menu-center-list');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   modalBtnClose.addEventListener('click', closeModal);
   btnMenu.addEventListener('click', openModal);
-  btnMenuTablet.addEventListener('click', closeModal);
+  btnOrderProject.addEventListener('click', closeModal);
   btnMenuModal.addEventListener('click', closeModal);
   menuLinks.forEach(function (link) {
     link.addEventListener('click', function () {
