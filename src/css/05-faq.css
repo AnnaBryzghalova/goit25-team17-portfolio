@@ -1,5 +1,6 @@
 /* 05-faq */
 /* mobile */
+<<<<<<< HEAD
 .faq-list-item {
   border-top: 1px solid rgba(250, 250, 250, 0.2);
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -7,6 +8,18 @@
 
 .ac-trigger {
   padding: 20px 0;
+=======
+.faq-header-main {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.faq-list {
+  padding: 20px 0;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+>>>>>>> b59fd0e28a11592eeaccb9488f5a1c02280248fc
 }
 
 .faq-header {
@@ -51,6 +64,13 @@
   .faq {
     padding: 25px 0;
   }
+<<<<<<< HEAD
+=======
+
+  .faq-list {
+    padding: 32px 0;
+  }
+>>>>>>> b59fd0e28a11592eeaccb9488f5a1c02280248fc
 }
 
 /* desktop */
@@ -59,22 +79,38 @@
     padding: 40px 0;
   }
 
+<<<<<<< HEAD
   .faq-list-item:nth-child(odd) {
+=======
+  .faq-list:nth-child(odd) {
+>>>>>>> b59fd0e28a11592eeaccb9488f5a1c02280248fc
     padding-right: 20px;
     border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
 
+<<<<<<< HEAD
   .faq-list-item:nth-child(even) {
     padding-left: 20px;
   }
 
   .faq-list {
+=======
+  .faq-list:nth-child(even) {
+    padding-left: 20px;
+  }
+
+  .faq-container-list {
+>>>>>>> b59fd0e28a11592eeaccb9488f5a1c02280248fc
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+<<<<<<< HEAD
   .faq-list-item {
+=======
+  .faq-list {
+>>>>>>> b59fd0e28a11592eeaccb9488f5a1c02280248fc
     width: calc(50% - 1px);
     margin-right: 1px;
     cursor: pointer;
