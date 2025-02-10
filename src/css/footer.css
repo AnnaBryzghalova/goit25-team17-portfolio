@@ -1,19 +1,22 @@
 /* footer */
-@import 'izitoast/dist/css/iziToast.min.css';
 
 /* ------------ MOBILE ------------ */
 .footer {
+  overflow: hidden;
+}
+.footer-container {
   padding-top: 32px;
   padding-bottom: 32px;
 
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .footer-title {
   max-width: 274px;
   margin-bottom: 63px;
 
+  color: #fafafa;
   font-size: 40px;
   font-weight: 500;
   line-height: 44px;
@@ -40,6 +43,8 @@
 
 .form-cooperation__label {
   margin-bottom: 16px;
+
+  position: relative;
 }
 .form-cooperation__label:last-of-type {
   margin-bottom: 32px;
@@ -74,9 +79,38 @@
   border-color: #3cbc81;
 }
 
-.form-cooperation__input--check:focus:invalid {
+.form-cooperation__valid-message {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+
+  opacity: 0;
+
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+
+  transition: opacity 250ms ease;
+}
+.form-cooperation__input--check:not(:placeholder-shown):focus:valid
+  + .success-message {
+  color: #3cbc81;
+
+  opacity: 1;
+}
+
+.form-cooperation__input--check:not(:placeholder-shown):focus:invalid {
   border-color: #ed3b44;
 }
+
+.form-cooperation__input--check:not(:placeholder-shown):focus:invalid
+  ~ .invalid-message {
+  color: #ed3b44;
+
+  opacity: 1;
+}
+
 .form-cooperation__input::placeholder {
   color: #fafafa99;
 }
@@ -152,7 +186,7 @@
 
 /* ------------ TABLET ------------ */
 @media only screen and (min-width: 768px) {
-  .footer {
+  .footer-container {
     padding-top: 80px;
     padding-bottom: 169px;
   }
@@ -210,8 +244,10 @@
 /* ----------- /TABLET ------------ */
 /* ------------ DESKTOP ------------ */
 @media only screen and (min-width: 1440px) {
-  .footer-container {
+  .footer-container-desctop {
     max-width: 1112px;
+    padding: 0 32px;
+    margin: 0 auto;
   }
 
   .form-cooperation__label:last-of-type {
@@ -241,6 +277,12 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms ease, visibility 250ms ease;
 }
 .cooperative-modal {
   width: 343px;
@@ -280,6 +322,12 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
+}
+
+.cooperation-modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 @media only screen and (min-width: 768px) {

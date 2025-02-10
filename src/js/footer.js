@@ -1,55 +1,37 @@
-import iziToast from 'izitoast';
+import { sendCooperationRequest } from './goit-api';
+import { showError } from './izi-toast-wrapper';
 
 const formCooperationEl = document.querySelector('.form-cooperation');
+const cooperativeModalWindowEL = document.querySelector(
+  '.js-cooperation-modal-backdrop'
+);
+const cooperativeModalContainEL = [
+  ...cooperativeModalWindowEL.children[0].children,
+];
 
-const createModal = (title, message) => {
-  const modal = `
-  <div class="cooperation-modal-backdrop js-cooperation-modal-backdrop" close>
-    <div class="cooperative-modal">
-      <button class="cooperation-modal__btn-close js-cooperation-modal__btn-close" type="button" close>
-        <svg class="cooperation-modal__btn-close-icon js-cooperation-modal__btn-close-icon" width="22" height="22" close>
-          <use href="../images/sprite.svg#icon-x-close" close></use>
-        </svg>
-      </button>
-      <h2 class="cooperative-modal__title">${title}</h2>
-      <p class="cooperative-modal__comment">${message}</p>
-    </div>
-  </div>
-  `;
-  document.body.insertAdjacentHTML('beforeend', modal);
+const fillModalText = (title, message) => {
+  let cooperativeModalTitleEl;
+  let cooperativeModalCommentEl;
 
-  const onBtnCloseClick = event => {
-    if (event.target.hasAttribute('close') || event.key === "Escape") {
-      document.querySelector('.cooperation-modal-backdrop').remove();
-
-      modalEL.removeEventListener('click', onBtnCloseClick);
+  cooperativeModalContainEL.forEach(el => {
+    if (el.classList.contains('cooperative-modal__title')) {
+      cooperativeModalTitleEl = el;
+    } else if (el.classList.contains('cooperative-modal__comment')) {
+      cooperativeModalCommentEl = el;
     }
-  };
+  });
 
-  const modalEL = document.querySelector('.js-cooperation-modal-backdrop');
-  modalEL.addEventListener('click', onBtnCloseClick);
-  document.addEventListener('keydown', onBtnCloseClick);
+  cooperativeModalTitleEl.innerHTML = title;
+  cooperativeModalCommentEl.innerHTML = message;
 };
 
-const postForm = async user => {
-  const fetchOptions = {
-    method: 'POST',
-    body: JSON.stringify(user),
-    headers: {
-      'content-type': 'application/json',
-    },
-  };
+const onBtnCloseClick = event => {
+  if (event.target.hasAttribute('close') || event.key === 'Escape') {
+    cooperativeModalWindowEL.classList.remove('is-open');
 
-  const responce = await fetch(
-    'https://portfolio-js.b.goit.study/api/requests',
-    fetchOptions
-  );
-
-  if (!responce.ok) {
-    throw new Error(responce.status);
+    modalEL.removeEventListener('click', onBtnCloseClick);
+    document.removeEventListener('keydown', onBtnCloseClick);
   }
-
-  return responce.json();
 };
 
 const onFormCooperativeSubmit = async event => {
@@ -62,16 +44,18 @@ const onFormCooperativeSubmit = async event => {
       comment: userComment.value.trim(),
     };
 
-    const { title, message } = await postForm(user);
+    const { title, message } = await sendCooperationRequest(user);
 
-    createModal(title, message);
+    fillModalText(title, message);
+
+    cooperativeModalWindowEL.classList.add('is-open');
+
+    cooperativeModalWindowEL.addEventListener('click', onBtnCloseClick);
+    document.addEventListener('keydown', onBtnCloseClick);
 
     formCooperationEl.reset();
   } catch (err) {
-    iziToast.error({
-      title: `Error: ${err.message}`,
-      position: 'topRight',
-    });
+    showError('Something was wrong! Please try again');
   }
 };
 
