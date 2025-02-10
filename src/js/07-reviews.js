@@ -1,6 +1,7 @@
 import { fetchResponses, sendCooperationRequest } from './goit-api';
 import { renderReviewItems } from './render-functions';
 import { initSwiper } from './swiper-api';
+import { showError } from './izi-toast-wrapper';
 
 const reviewsList = document.querySelector('#reviews .swiper-wrapper');
 reviewsEntryPoint();
@@ -26,6 +27,15 @@ async function reviewsEntryPoint() {
     document
       .querySelector('#reviews .side-arrows')
       .classList.add('visually-hidden');
+
+    reviewsList.style = 'justify-content: center';
+
+    const boundingRect = reviewsList.getBoundingClientRect();
+    if (isReviewsListVisible()) {
+      showErrorMessage();
+    } else {
+      addEventListener('scroll', onScroll);
+    }
   }
 }
 
@@ -35,8 +45,22 @@ async function tryRenderReviews() {
     reviewsList.innerHTML = renderReviewItems(response);
     return true;
   } catch (error) {
-    console.error('Error fetching reviews:', error);
     reviewsList.innerHTML = '<li class="swiper-slide">Not found</li>';
     return false;
   }
+}
+
+function onScroll() {
+  if (isReviewsListVisible()) {
+    removeEventListener('scroll', onScroll);
+    showErrorMessage();
+  }
+}
+
+function isReviewsListVisible() {
+  return reviewsList.getBoundingClientRect()['y'] <= window.innerHeight;
+}
+
+function showErrorMessage() {
+  showError("Can't load reviews :(");
 }
