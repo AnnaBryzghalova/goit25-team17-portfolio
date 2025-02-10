@@ -1,3 +1,5 @@
+
+
 /* 02-about-me */
 
 /* title section */
@@ -49,9 +51,9 @@
 /* Опис про себе, мого досвіду та досягнення у навчанні(освіта) */
 .description-items{
     max-width: 1376px;
-    height: 608px;
+    max-height: 1048px;
     margin-top: 96px;
-    margin-bottom: 192px;
+    margin-bottom: 96px;
 }
 
 .accord-title{
@@ -163,39 +165,45 @@
 
 
 /* Стилізація скілів start*/
-.list-items-skills{
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
+
+.skills-items {
+    position: relative;
+    width: 100%;
+    max-width: 1312px;
     height: 200px;
-
+    overflow: hidden;
 }
 
-.skills-items{
-   display: flex;
-    /* margin-top: 96px; */
+.list-items-skills {
+    display: flex;
+    padding: 0;
+    max-width: 1200px;
+    max-height: 200px;
+    
+
+    
 }
 
-.btn-slide{
+.item-skill {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    padding: 80px;
+    border-radius: 50%;
+    border: 2px solid #FAFAFA33;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #ED3B44;
+}
+
+/* Стили кнопок */
+
+.swiper-button-next {
+    color: rgb(247, 242, 242);
     width: 40px;
     height: 40px;
     margin-left: 72px;
     margin-top: 80px;
     margin-bottom: 80px;
-
 }
-
-.item-skill{
-    width: 200px;
-    height: 200px;
-    padding: 88px 55px 88px 55px;
-    border-radius: 50%;
-    background-origin:content-box;
-    border: 2px solid;
-    /* border: 2px solid var(--main-color); */
-    /* background-origin:content-box; */
-
-}
-
-
 /* Стилізація скілів end*/
