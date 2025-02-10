@@ -3,7 +3,6 @@ import { renderReviewItems } from './render-functions';
 import { initSwiper } from './swiper-api';
 import { showError } from './izi-toast-wrapper';
 
-//const reviewsSection = document.querySelector('#reviews');
 const reviewsList = document.querySelector('#reviews .swiper-wrapper');
 reviewsEntryPoint();
 
