@@ -9,6 +9,7 @@
   letter-spacing: -0.02em;
   margin: 0 0 32px;
   min-width: 0;
+  justify-content: center;
 }
 
 #reviews .swiper-slide {

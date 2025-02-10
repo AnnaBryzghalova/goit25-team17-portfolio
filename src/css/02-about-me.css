@@ -1,1 +1,78 @@
 /* 02-about-me */
+
+/* title section */
+.title-section-about-me {
+  visibility: hidden;
+}
+
+/* Презентація мене */
+.list-items-presentation-my {
+  display: flex;
+}
+
+.item-my-activity {
+  width: 680px;
+  height: 700px;
+  margin-right: 16px;
+  background-color: #242527;
+  border-radius: 24px;
+}
+
+.my-activity {
+  width: 552px;
+  height: 200px;
+  padding: 64px 64px 436px 64px;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 40px;
+  box-sizing: content-box;
+}
+
+.my-activity-style-word-one {
+  color: #ed3b44;
+}
+.my-activity-style-word-two {
+  color: #fafafa66;
+}
+
+.item-my-photo {
+  width: 680px;
+  height: 700px;
+  border-radius: 24px;
+}
+
+/* Опис про себе, мого досвіду та досягнення у навчанні(освіта) */
+
+/* Стилізація скілів start*/
+.list-items-skills {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 200px;
+}
+
+.skills-items {
+  display: flex;
+}
+
+.btn-slide {
+  width: 40px;
+  height: 40px;
+  margin-left: 72px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.item-skill {
+  width: 200px;
+  height: 200px;
+  padding: 88px 55px 88px 55px;
+  border-radius: 50%;
+  background-origin: content-box;
+  border: 2px solid;
+  /* border: 2px solid var(--main-color); */
+  /* background-origin:content-box; */
+}
+
+/* Стилізація скілів end*/

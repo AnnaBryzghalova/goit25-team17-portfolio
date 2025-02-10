@@ -14,6 +14,8 @@ TODO: connect fonts via @font-face */
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
+@import url('izitoast/dist/css/iziToast.min.css');
+@import url('./izi-toast-overrides.css');
 
 /* Sections style */
 @import url('./header.css');
