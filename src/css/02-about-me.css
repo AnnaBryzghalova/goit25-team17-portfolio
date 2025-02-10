@@ -1,1 +1,209 @@
+
+
 /* 02-about-me */
+
+/* title section */
+.title-section-about-me{
+    visibility: hidden;
+}
+
+
+
+/* Презентація мене */
+.list-items-presentation-my{
+    display: flex;
+}
+
+.item-my-activity{
+    width: 680px;
+    height: 700px;
+    margin-right: 16px;
+    background-color: #242527;
+    border-radius: 24px;
+}
+
+.my-activity{
+    width: 552px;
+    height: 200px;
+    padding: 64px 64px 436px 64px;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 40px;
+    box-sizing: content-box;
+}
+
+.my-activity-style-word-one{
+    color: #ED3B44;
+}
+.my-activity-style-word-two{
+    color: #FAFAFA66;
+}
+
+.item-my-photo{
+    width: 680px;
+    height: 700px;
+    border-radius: 24px;
+}
+
+
+
+/* Опис про себе, мого досвіду та досягнення у навчанні(освіта) */
+.description-items{
+    max-width: 1376px;
+    max-height: 1048px;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.accord-title{
+    max-width: 1376px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+   
+        
+}
+
+.title-role,
+.title-education{
+    
+    margin-top: 32px;
+    
+}
+
+.item-my-description,
+.item-my-role,
+.item-my-education{
+    max-width: 1376px;
+    border-bottom: 1px solid #FAFAFA33;
+    
+}
+
+.title-description,
+.title-role,
+.title-education{
+    
+    color: #FAFAFA66;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 24px;
+    
+}
+
+
+
+.accord-panel-first{
+    width: 612px;
+    height: 320px;
+    margin: 8px 68px 32px 696px;
+   
+}
+
+.accord-panel{
+    width: 622px;
+    /* height: 72px; */
+    margin: 8px 68px 32px 696px;
+   
+}
+
+.accord-panel-role{
+    width: 284px;
+    margin: 8px 396px 32px 696px;
+}
+
+.accord-panel-education{
+    width: 465px;
+    margin: 8px 215px 32px 696px;
+}
+
+.text-description-one{
+    width: 622px;
+    height: 120px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-sizing: content-box;
+    padding-bottom: 32px;
+}
+
+.text-description-two{
+    width: 622px;
+    height: 168px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-sizing: content-box;
+    
+}
+
+.style-text-role,
+.style-text-education{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.btn-accordion-description,
+.btn-accordion-role,
+.btn-accordion-education{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px;
+    border-color: #FAFAFA33;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+
+/* Стилізація скілів start*/
+
+.skills-items {
+    position: relative;
+    width: 100%;
+    max-width: 1312px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.list-items-skills {
+    display: flex;
+    padding: 0;
+    max-width: 1200px;
+    max-height: 200px;
+    
+
+    
+}
+
+.item-skill {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    padding: 80px;
+    border-radius: 50%;
+    border: 2px solid #FAFAFA33;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #ED3B44;
+}
+
+/* Стили кнопок */
+
+.swiper-button-next {
+    color: rgb(247, 242, 242);
+    width: 40px;
+    height: 40px;
+    margin-left: 72px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* Стилізація скілів end*/
