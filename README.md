@@ -21,3 +21,13 @@ Live page: https://annabryzghalova.github.io/goit25-team17-portfolio/
 
 - https://validator.w3.org/
 - https://jigsaw.w3.org/css-validator/
+
+# All SVG icons ID-s in sprite.svg
+- #icon-arrow-down
+- #icon-arrow-right
+- #icon-brush
+- #icon-chat-message
+- #icon-hourglass
+- #icon-user
+- #icon-x-close
+- #icon-menu-burger

@@ -1,0 +1,9 @@
+import './js/header';
+import './js/01-hero';
+import './js/02-about-me';
+import './js/03-benefits';
+import './js/04-projects';
+import './js/05-faq';
+import './js/06-covers';
+import './js/07-reviews';
+import './js/footer';
