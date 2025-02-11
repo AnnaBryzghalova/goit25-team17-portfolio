@@ -5,7 +5,7 @@
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.ac-trigger {
+#faq .ac-trigger {
   padding: 20px 0;
 }
 
@@ -23,17 +23,17 @@
   text-transform: none;
 }
 
-.ac .ac-panel {
+#faq .ac .ac-panel {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
 }
 
-.ac.js-enabled .ac-panel {
+#faq .ac.js-enabled .ac-panel {
   visibility: hidden;
 }
 
-.ac.is-active .ac-panel {
+#faq .ac.is-active .ac-panel {
   visibility: visible;
 }
 
