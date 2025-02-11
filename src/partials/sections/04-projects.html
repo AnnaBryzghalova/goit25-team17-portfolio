@@ -2,11 +2,153 @@
   <div class="container">
     <h2 class="projects-title">Projects</h2>
 
-    <div class="swiper">
-      <ul class="swiper-wrapper"></ul>
+    <div
+      class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+    >
+      <ul
+        class="swiper-wrapper"
+        style="
+          transition-duration: 0ms;
+          transform: translate3d(0px, 0px, 0px);
+          transition-delay: 0ms;
+        "
+      >
+        <li
+          class="projects-item swiper-slide swiper-slide-active"
+          style="width: 1376px"
+        >
+          <div class="projects-item-part-one">
+            <ul class="projects-skills">
+              <li class="projects-skills-item">#react</li>
+              <li class="projects-skills-item">#js</li>
+              <li class="projects-skills-item">#node js</li>
+              <li class="projects-skills-item">#git</li>
+            </ul>
+            <h3>
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              target="_blank"
+              href="https://github.com/AnnaBryzghalova/goit25-team17-portfolio"
+              class="projects-item-link btn-red"
+            >
+              See project
+            </a>
+          </div>
+          <picture class="projects-item-part-two">
+            <source
+              srcset="
+                /images/projects/01-read-journey.webp    1x,
+                /images/projects/01-read-journey@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /images/projects/01-read-journey-mob.webp    1x,
+                /images/projects/01-read-journey-mob@2x.webp 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/images/projects/01-read-journey-mob.webp"
+              alt="project image"
+            />
+          </picture>
+        </li>
+
+        <li
+          class="projects-item swiper-slide swiper-slide-next"
+          style="width: 1376px"
+        >
+          <div class="projects-item-part-one">
+            <ul class="projects-skills">
+              <li class="projects-skills-item">#react</li>
+              <li class="projects-skills-item">#js</li>
+              <li class="projects-skills-item">#node js</li>
+              <li class="projects-skills-item">#git</li>
+            </ul>
+            <h3>
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              target="_blank"
+              href="https://github.com/AnnaBryzghalova/goit25-team17-portfolio"
+              class="projects-item-link btn-red"
+            >
+              See project
+            </a>
+          </div>
+          <picture class="projects-item-part-two">
+            <source
+              srcset="
+                /images/projects/02-petlove.webp    1x,
+                /images/projects/02-petlove@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /images/projects/02-petlove-mob.webp    1x,
+                /images/projects/02-petlove-mob@2x.webp 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/images/projects/02-petlove-mob.webp"
+              alt="project image"
+            />
+          </picture>
+        </li>
+
+        <li class="projects-item swiper-slide" style="width: 1376px">
+          <div class="projects-item-part-one">
+            <ul class="projects-skills">
+              <li class="projects-skills-item">#react</li>
+              <li class="projects-skills-item">#js</li>
+              <li class="projects-skills-item">#node js</li>
+              <li class="projects-skills-item">#git</li>
+            </ul>
+            <h3>
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              target="_blank"
+              href="https://github.com/AnnaBryzghalova/goit25-team17-portfolio"
+              class="projects-item-link btn-red"
+            >
+              See project
+            </a>
+          </div>
+          <picture class="projects-item-part-two">
+            <source
+              srcset="
+                /images/projects/03-vocabbuilder.webp    1x,
+                /images/projects/03-vocabbuilder@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /images/projects/03-vocabbuilder-mob.webp    1x,
+                /images/projects/03-vocabbuilder-mob@2x.webp 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/images/projects/03-vocabbuilder-mob.webp"
+              alt="project image"
+            />
+          </picture>
+        </li>
+      </ul>
 
       <div class="side-arrows">
-        <button type="button" class="swiper-button-prev">
+        <button
+          type="button"
+          class="swiper-button-prev swiper-button-disabled"
+          disabled=""
+        >
           <svg>
             <use href="./images/sprite.svg#icon-arrow-right"></use>
           </svg>
