@@ -4,6 +4,17 @@ import { initSwiper } from './swiper-api';
 import { showError } from './izi-toast-wrapper';
 
 const reviewsList = document.querySelector('#reviews .swiper-wrapper');
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0,
+};
+const intersectionObserver = new IntersectionObserver(
+  onIntersection,
+  observerOptions
+);
+
 reviewsEntryPoint();
 
 async function reviewsEntryPoint() {
@@ -30,12 +41,7 @@ async function reviewsEntryPoint() {
 
     reviewsList.style = 'justify-content: center';
 
-    const boundingRect = reviewsList.getBoundingClientRect();
-    if (isReviewsListVisible()) {
-      showErrorMessage();
-    } else {
-      addEventListener('scroll', onScroll);
-    }
+    intersectionObserver.observe(reviewsList);
   }
 }
 
@@ -50,17 +56,12 @@ async function tryRenderReviews() {
   }
 }
 
-function onScroll() {
-  if (isReviewsListVisible()) {
-    removeEventListener('scroll', onScroll);
-    showErrorMessage();
+function onIntersection(entries) {
+  for (const entry of entries) {
+    if (entry.target == reviewsList && entry.isIntersecting) {
+      intersectionObserver.unobserve(reviewsList);
+      showError("Can't load reviews :(");
+      return;
+    }
   }
-}
-
-function isReviewsListVisible() {
-  return reviewsList.getBoundingClientRect()['y'] <= window.innerHeight;
-}
-
-function showErrorMessage() {
-  showError("Can't load reviews :(");
 }

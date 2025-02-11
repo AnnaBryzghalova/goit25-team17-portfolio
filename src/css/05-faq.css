@@ -1,1 +1,119 @@
 /* 05-faq */
+/* mobile */
+.faq-list-item {
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+#faq .ac-trigger {
+  padding: 20px 0;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--main-white);
+
+  text-transform: none;
+}
+
+#faq .ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+
+#faq .ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+
+#faq .ac.is-active .ac-panel {
+  visibility: visible;
+}
+
+.faq-text {
+  margin-top: 16px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .faq {
+    padding: 25px 0;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+  .faq {
+    padding: 40px 0;
+  }
+
+  .faq-list-item:nth-child(odd) {
+    padding-right: 20px;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .faq-list-item:nth-child(even) {
+    padding-left: 20px;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .faq-list-item {
+    width: calc(50% - 1px);
+    margin-right: 1px;
+    cursor: pointer;
+  }
+}
+
+/* btn sec */
+.btn-arrow-read-more {
+  transition: transform 0.5s ease;
+
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  border-radius: 100px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+
+  background-color: transparent;
+}
+
+.is-active .btn-arrow-read-more {
+  transform: rotate(180deg);
+}
+
+.btn-arrow-read-more:hover {
+  color: var(--main-white);
+  background-color: rgba(250, 250, 250, 0.1);
+  border-color: rgba(250, 250, 250, 0.5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .btn-arrow-read-more {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+}
