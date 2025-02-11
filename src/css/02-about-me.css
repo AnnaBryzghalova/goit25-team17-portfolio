@@ -1,1 +1,345 @@
 /* 02-about-me */
+
+/* title section */
+.title-section-about-me{
+    visibility: hidden;
+}
+
+
+/* Презентація мене */
+.list-items-presentation-my{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+
+.item-my-activity{
+    width: 100%;
+    max-width: 680px;
+    max-height: 700px;
+    margin-right: 16px;
+    background-color: #242527;
+    border-radius: 24px;
+}
+
+.my-activity{
+    max-width: 552px;
+    max-height: 200px;
+    padding: 64px 64px 436px 64px;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 40px;
+    box-sizing: content-box;
+}
+
+.my-activity-style-word-one{
+    color: #ED3B44;
+}
+.my-activity-style-word-two{
+    color: #FAFAFA66;
+}
+
+.item-my-photo{
+    max-width: 680px;
+    max-height: 700px;
+    border-radius: 24px;
+}
+
+
+
+/* Опис про себе, мого досвіду та досягнення у навчанні(освіта) */
+
+.list-items-description-my{
+    max-width: 1440px;
+    max-height: 1048px;
+    width: 100%;
+    margin-bottom: 96px;
+}
+
+.description-items{
+    width: 100%;
+    max-width: 1376px;
+    max-height: 1048px;  
+}
+
+.accord-title{
+    width: 100%;
+    max-width: 1376px;
+    max-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;    
+}
+
+.item-my-description,
+.item-my-role,
+.item-my-education{
+    max-width: 1376px;
+    border-bottom: 1px solid #FAFAFA33;
+    
+}
+
+.title-description,
+.title-role,
+.title-education{
+    
+    color: #FAFAFA66;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 24px;
+    
+}
+
+/* .accordion-container .is-active .accord-panel {
+    display: block;
+} */
+
+/* .accord-panel-first{
+    width: 612px;
+    height: 320px;
+    margin: 8px 68px 32px 696px;
+   
+} */
+
+
+
+.text-description-one{
+    width: 100%;
+    max-width: 622px;
+    max-height: 120px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-sizing: content-box;
+    padding-bottom: 32px;
+   
+}
+
+.text-description-two{
+    max-width: 622px;
+    max-height: 168px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-sizing: content-box;
+    
+}
+
+.style-text-role,
+.style-text-education{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /*height: 0;
+    overflow: hidden; */
+}
+    .btn-accordion{
+        background-color: #1C1D20;
+        border-radius: 50%;
+            border: 1px solid #FAFAFA33;
+          
+    }
+
+        
+svg {   
+    border-radius: 50%;
+    border: 1px;
+    border-color: #FAFAFA33;
+    stroke: #FAFAFA;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+
+/* Стилізація скілів start*/
+
+.swiper {
+    overflow: hidden;
+}
+
+.skills-items {
+    position: relative;
+    width: 100%;
+    max-width: 1312px;
+    height: 200px;
+    margin-left: 32px;
+    margin-right: 32px;
+    /* overflow: hidden; */
+   
+}
+
+.list-items-skills {
+    display: flex;
+    padding: 0;
+    /* justify-items: center;
+    align-items: center; */
+    max-width: 900px;
+    max-height: 200px;
+    
+
+    
+}
+
+.item-skill {
+    /* flex-shrink: 0; */
+    max-width: 200px;
+    max-height: 200px;
+    padding: 80px;
+    border-radius: 50%;
+    border: 2px solid #FAFAFA33;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #ED3B44;
+}
+
+.skill-text{
+
+text-align: center;
+}
+
+/* Стили кнопок */
+
+.btn-slide {
+    /* color: rgb(247, 242, 242);
+    width: 40px;
+    height: 40px;
+    margin: 72px;
+    margin-top: 80px;
+    margin-bottom: 80px; */
+
+    position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+}
+/* Стилізація скілів end*/
+
+
+
+ @media screen and (max-width: 375px) {
+        .my-activity {
+            min-width: 279px;
+            min-height: 196px;
+            padding: 32px 32px 272px 32px;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 28px;
+            box-sizing: content-box;
+        }
+
+        .accord-panel,
+        .accord-panel-role,
+        .accord-panel-education {
+            width: 100%;
+            min-width: 343px;
+            padding-bottom: 20px;
+        }
+
+        .accord-panel{
+            min-height: 560px;
+        }
+
+        .text-description-one {
+            width: 100%;
+            min-width: 343px;
+            min-height: 216px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            box-sizing: content-box;
+            padding-bottom: 32px;
+        }
+
+        .text-description-two {
+            min-width: 343px;
+            min-height: 312px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            box-sizing: content-box;
+        }
+
+        svg {
+            border-radius: 50%;
+            border: 1px;
+            border-color: #FAFAFA33;
+            stroke: #FAFAFA;
+            width: 36px;
+            height: 36px;
+            padding: 10px;
+        }
+
+        .accord-title {
+            width: 100%;
+            min-width: 343px;
+            min-height: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+ }
+
+ @media screen and (min-width: 768px) {
+        .accord-panel,
+        .accord-panel-role,
+        .accord-panel-education{
+            width: 100%;
+            min-width: 704px;
+            padding-bottom: 32px;       
+         }
+
+        .text-description-one {
+            width: 100%;
+            max-width: 704px;
+            max-height: 120px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            box-sizing: content-box;
+            padding-bottom: 16px;
+        }
+
+        .text-description-two {
+            max-width: 704px;
+            max-height: 144px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            box-sizing: content-box;
+        }
+
+}
+
+@media screen and (min-width: 1440px) {
+        .accord-panel {
+            width: 100%;
+            max-width: 622px;
+            margin: 8px 68px 32px 696px;
+        
+        }
+        
+        .accord-panel-role {
+            width: 100%;
+            max-width: 284px;
+            margin: 8px 396px 32px 696px;
+        }
+        
+        .accord-panel-education {
+            width: 100%;
+            max-width: 465px;
+            margin: 8px 215px 32px 696px;
+        }
+
+    
+} 
