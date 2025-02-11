@@ -1,17 +1,17 @@
 import { initSwiper } from './swiper-api';
 
-import firstImageDesktop from '../images/projects/01-read-journey.png';
-import firstImageDesktop2x from '../images/projects/01-read-journey@2x.png';
-import firstImageMobile from '../images/projects/01-read-journey-mob.png';
-import firstImageMobile2x from '../images/projects/01-read-journey-mob@2x.png';
-import secondImageDesktop from '../images/projects/02-petlove.png';
-import secondImageDesktop2x from '../images/projects/02-petlove-mob@2x.png';
-import secondImageMobile from '../images/projects/02-petlove-mob.png';
-import secondImageMobile2x from '../images/projects/02-petlove-mob@2x.png';
-import thirdImageDesktop from '../images/projects/03-vocabbuilder.png';
-import thirdImageDesktop2x from '../images/projects/03-vocabbuilder@2x.png';
-import thirdImageMobile from '../images/projects/03-vocabbuilder-mob.png';
-import thirdImageMobile2x from '../images/projects/03-vocabbuilder@2x.png';
+import firstImageDesktop from '../images/projects/01-read-journey.webp';
+import firstImageDesktop2x from '../images/projects/01-read-journey@2x.webp';
+import firstImageMobile from '../images/projects/01-read-journey-mob.webp';
+import firstImageMobile2x from '../images/projects/01-read-journey-mob@2x.webp';
+import secondImageDesktop from '../images/projects/02-petlove.webp';
+import secondImageDesktop2x from '../images/projects/02-petlove-mob@2x.webp';
+import secondImageMobile from '../images/projects/02-petlove-mob.webp';
+import secondImageMobile2x from '../images/projects/02-petlove-mob@2x.webp';
+import thirdImageDesktop from '../images/projects/03-vocabbuilder.webp';
+import thirdImageDesktop2x from '../images/projects/03-vocabbuilder@2x.webp';
+import thirdImageMobile from '../images/projects/03-vocabbuilder-mob.webp';
+import thirdImageMobile2x from '../images/projects/03-vocabbuilder@2x.webp';
 
 const images = [
   {
