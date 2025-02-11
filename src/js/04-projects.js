@@ -5,13 +5,13 @@ import firstImageDesktop2x from '../images/projects/01-read-journey@2x.webp';
 import firstImageMobile from '../images/projects/01-read-journey-mob.webp';
 import firstImageMobile2x from '../images/projects/01-read-journey-mob@2x.webp';
 import secondImageDesktop from '../images/projects/02-petlove.webp';
-import secondImageDesktop2x from '../images/projects/02-petlove-mob@2x.webp';
+import secondImageDesktop2x from '../images/projects/02-petlove@2x.webp';
 import secondImageMobile from '../images/projects/02-petlove-mob.webp';
 import secondImageMobile2x from '../images/projects/02-petlove-mob@2x.webp';
 import thirdImageDesktop from '../images/projects/03-vocabbuilder.webp';
 import thirdImageDesktop2x from '../images/projects/03-vocabbuilder@2x.webp';
 import thirdImageMobile from '../images/projects/03-vocabbuilder-mob.webp';
-import thirdImageMobile2x from '../images/projects/03-vocabbuilder@2x.webp';
+import thirdImageMobile2x from '../images/projects/03-vocabbuilder-mob@2x.webp';
 
 const images = [
   {
@@ -48,15 +48,18 @@ function createMarkUp(img) {
               <li class="projects-skills-item">#node js</li>
               <li class="projects-skills-item">#git</li>
             </ul>
-            <div class="projects-description">
-            <h3 class="projects-article">
+            <h3>
                 Programming Across Borders: Ideas, Technologies, Innovations
             </h3>
-            <a target="_blank" href="https://github.com/AnnaBryzghalova/goit25-team17-portfolio" class="projects-article-link">See project</a>
-            </div>
+            <a
+              target="_blank"
+              href="https://github.com/AnnaBryzghalova/goit25-team17-portfolio"
+              class="projects-item-link btn-red"
+            >
+              See project
+            </a>
           </div>
-          <div class="projects-item-part-two">
-            <picture class="project-image">
+            <picture class="projects-item-part-two">
             <source
                 srcset="${item.desktop} 1x, ${item.desktop2x} 2x"
                 media="(min-width: 768px)"
@@ -65,16 +68,15 @@ function createMarkUp(img) {
                 srcset="${item.mobile} 1x, ${item.mobile2x} 2x"
                 media="(max-width: 767px)"
             />
-            <img src=${firstImageDesktop} alt="project image" />
+            <img src=${item.mobile} alt="project image" />
             </picture>
-          </div>
         </li>
         `;
     })
     .join('');
 }
 
-list.insertAdjacentHTML('beforeend', createMarkUp(images));
+list.innerHTML = createMarkUp(images);
 
 initSwiper({
   sectionId: 'projects',
