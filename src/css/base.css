@@ -78,6 +78,7 @@ svg {
 }
 
 .btn-red {
+  display: inline-block;
   height: 45px;
   border: none;
   border-radius: 60px;
