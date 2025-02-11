@@ -1,1 +1,39 @@
-/* 04-projects */
+:root {
+  --black: #1c1d20;
+  --white: #fafafafa;
+  --letterspacing: -0.02em;
+}
+
+#projects .swiper-wrapper {
+  display: flex;
+}
+
+.projects-item {
+  min-width: 100%;
+  border-radius: 24px;
+  height: 812px;
+  background-color: var(--white);
+}
+
+.projects-item-part-one {
+  padding: 32px;
+}
+
+.projects-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.projects-skills-item {
+  text-wrap: nowrap;
+  color: var(--black);
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+}
+
+.projects-item h3 {
+  margin: 96px 0 32px;
+  color: var(--black);
+}
