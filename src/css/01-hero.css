@@ -4,7 +4,7 @@
 }
 
 .hero-bg {
-  background-image: url(../images/hero/background-mob.png);
+  background-image: url(/images/hero/background-mob.png);
   background-repeat: repeat-y;
   background-position: left;
   background-size: 100% 1px;
@@ -14,7 +14,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: url(../images/hero/background-mob@2x.png);
+    background-image: url(/images/hero/background-mob@2x.png);
     background-size: 90% 1px;
   }
 }
@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-bg {
-    background-image: url(../images/hero/background-tab.png);
+    background-image: url(/images/hero/background-tab.png);
     background-size: 581px 1px;
   }
 
@@ -77,7 +77,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-bg {
-      background-image: url(../images/hero/background-tab@2x.png);
+      background-image: url(/images/hero/background-tab@2x.png);
       background-size: 581px 1px;
     }
   }
@@ -111,7 +111,7 @@
 
 @media screen and (min-width: 1440px) {
   .hero-bg {
-    background-image: url(../images/hero/background-desk.png);
+    background-image: url(/images/hero/background-desk.png);
     background-size: 728px 1px;
   }
 
@@ -119,7 +119,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-bg {
-      background-image: url(../images/hero/background-desk@2x.png);
+      background-image: url(/images/hero/background-desk@2x.png);
       background-size: 728px 1px;
     }
   }

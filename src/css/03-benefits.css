@@ -140,10 +140,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .benefits {
-    padding: 48px 0;
-  }
-
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -156,10 +152,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .benefits {
-    padding: 82px 0;
-  }
-
   .benefits-content {
     display: flex;
     justify-content: space-between;
