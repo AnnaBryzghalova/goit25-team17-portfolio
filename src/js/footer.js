@@ -29,7 +29,7 @@ const onBtnCloseClick = event => {
   if (event.target.hasAttribute('data-close') || event.key === 'Escape') {
     cooperativeModalWindowEL.classList.remove('is-open');
 
-    modalEL.removeEventListener('click', onBtnCloseClick);
+    cooperativeModalWindowEL.removeEventListener('click', onBtnCloseClick);
     document.removeEventListener('keydown', onBtnCloseClick);
   }
 };
