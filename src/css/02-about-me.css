@@ -144,6 +144,7 @@
   border-radius: 50%;
   min-width: 130px;
   min-height: 130px;
+  transition: border-color 250ms ease;
 }
 
 .about-skills-item > p {
