@@ -251,6 +251,7 @@
 
   #about-me .swiper-button-next {
     width: 40px;
+    height: 200px;
   }
 
   #about-me .swiper-button-next > svg {
