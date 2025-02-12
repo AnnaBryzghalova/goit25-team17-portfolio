@@ -26,7 +26,7 @@ const fillModalText = (title, message) => {
 };
 
 const onBtnCloseClick = event => {
-  if (event.target.hasAttribute('close') || event.key === 'Escape') {
+  if (event.target.hasAttribute('data-close') || event.key === 'Escape') {
     cooperativeModalWindowEL.classList.remove('is-open');
 
     modalEL.removeEventListener('click', onBtnCloseClick);
