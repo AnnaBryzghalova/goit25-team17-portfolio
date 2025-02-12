@@ -56,24 +56,16 @@
 
 .menu-center-item a {
   text-decoration: none;
-  color: #fafafa;
+  color: var(--white);
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .menu-center-item a:hover {
-  color: #ed3b44;
+  color: var(--base-red);
   text-decoration: underline;
   transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.icon-header-logo {
-  fill: #fafafa;
-}
-
-.header-icon-burger {
-  fill: #fafafa;
 }
 
 .button-order-project {
@@ -133,10 +125,6 @@
   justify-content: center;
 }
 
-.menu-icon-close {
-  fill: #fafafa;
-}
-
 .menu-list {
   display: flex;
   gap: 12px;
@@ -145,7 +133,7 @@
 }
 
 .menu-item a {
-  color: #fafafa;
+  color: var(--white);
   text-decoration: underline;
   transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }

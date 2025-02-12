@@ -3,7 +3,6 @@
   position: relative;
   overflow: hidden;
   height: 508px;
-  min-width: 320px;
   background-image: image-set(
     url(/images/covers/background-mob.jpg) 1x,
     url(/images/covers/background-mob@2x.jpg) 2x
