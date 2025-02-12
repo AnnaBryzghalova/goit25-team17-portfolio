@@ -21,6 +21,12 @@
   height: 80px;
 }
 
+.icon-header-logo {
+  width: 84px;
+  height: 19px;
+  fill: var(--white);
+}
+
 .menu-center {
   width: 74px;
   position: relative;
