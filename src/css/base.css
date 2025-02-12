@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: 'Inter Tight', serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  color: var(--white);
+  color: #fafafa;
 
   min-height: 100vh;
   background-color: var(--black);
