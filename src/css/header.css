@@ -68,15 +68,16 @@
   transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.menu-center-item a:hover {
+.menu-center-item a:hover,
+.menu-center-item a:focus {
   color: var(--base-red);
   text-decoration: underline;
-  transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .button-order-project {
   display: none;
   padding: 14px 31px;
+  cursor: pointer;
 }
 
 /* menu */
@@ -121,7 +122,13 @@
   height: 28px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
   z-index: 1;
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  opacity: 0.7;
 }
 
 .header-menu {
@@ -142,6 +149,13 @@
   color: var(--white);
   text-decoration: underline;
   transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  color: var(--base-red);
+  text-decoration: underline;
 }
 
 .btn-menu {
@@ -149,9 +163,11 @@
   bottom: 64px;
   padding: 14px 31px;
   font-size: 14px;
+  cursor: pointer;
 }
 
-.btn-menu:hover {
+.btn-menu:hover,
+.btn-menu:focus {
   background-color: #e0373f;
   transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
