@@ -25,6 +25,7 @@
   width: 84px;
   height: 19px;
   fill: var(--white);
+  stroke: none;
 }
 
 .menu-center {

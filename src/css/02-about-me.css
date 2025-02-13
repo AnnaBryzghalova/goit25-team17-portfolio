@@ -150,7 +150,8 @@
   border: none;
 }
 
-.about-skills-item:not(.swiper-slide-active):hover {
+.about-skills-item:not(.swiper-slide-active):hover,
+.about-skills-item:not(.swiper-slide-active):focus {
   border-color: var(--white);
 }
 
