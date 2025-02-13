@@ -65,7 +65,7 @@ const onFormCooperativeSubmit = async event => {
 
     formCooperationEl.reset();
   } catch (err) {
-    showError('Something was wrong! Please try again');
+    showError('Something went wrong! Please try again later');
   }
 };
 
