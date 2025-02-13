@@ -22,9 +22,12 @@ export function initSwiper({
     : [Keyboard];
 
   if (useNavigation) {
+    const btnPrev = document.querySelector(`#${sectionId} .swiper-button-prev`);
+    const btnNext = document.querySelector(`#${sectionId} .swiper-button-next`);
+
     swiperParameters.navigation = {
-      prevEl: '.swiper-button-prev',
-      nextEl: '.swiper-button-next',
+      prevEl: btnPrev,
+      nextEl: btnNext,
     };
   }
 
