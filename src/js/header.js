@@ -8,34 +8,45 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuCenterOpen = document.querySelector('.menu-center-open');
   const menuCenterList = document.querySelector('.menu-center-list');
 
+  function disableScroll() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  function enableScroll() {
+    document.body.style.overflow = '';
+  }
+
   function openModal() {
     modalHeader.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
     modalBtnClose.style.display = 'flex';
+    disableScroll();
   }
 
   function closeModal() {
     modalHeader.classList.remove('is-open');
-    document.body.style.overflow = '';
+    modalBtnClose.style.display = 'none';
+    enableScroll();
   }
 
   modalBtnClose.addEventListener('click', closeModal);
   btnMenu.addEventListener('click', openModal);
   btnOrderProject.addEventListener('click', closeModal);
   btnMenuModal.addEventListener('click', closeModal);
-  menuLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
-      closeModal();
-    });
-  });
+  menuLinks.forEach(link => link.addEventListener('click', closeModal));
 
-  const menuCenterItems = document.querySelectorAll('.menu-center-item a');
-  menuCenterItems.forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      menuCenterList.classList.remove('is-open');
-    });
-  });
+  menuCenterOpen.style.cursor = 'pointer';
+  btnMenu.style.cursor = 'pointer';
+  modalBtnClose.style.cursor = 'pointer';
+  btnMenuModal.style.cursor = 'pointer';
+  btnOrderProject.style.cursor = 'pointer';
+
   menuCenterOpen.addEventListener('click', function () {
     menuCenterList.classList.toggle('is-open');
+  });
+
+  menuCenterList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function () {
+      menuCenterList.classList.remove('is-open');
+    });
   });
 });
