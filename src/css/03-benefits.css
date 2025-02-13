@@ -41,7 +41,8 @@
   font-size: 16px;
 }
 
-.benefits-button:hover {
+.benefits-button:hover,
+.benefits-button:focus {
   border-color: var(--white);
 }
 
@@ -65,7 +66,8 @@
   transition: opacity 0.5s ease;
 }
 
-.benefits-item:hover::before {
+.benefits-item:hover::before,
+.benefits-item:focus::before {
   opacity: 1;
 }
 
@@ -115,7 +117,8 @@
   }
 }
 
-.benefits-item:hover .benefits-icons {
+.benefits-item:hover .benefits-icons,
+.benefits-item:focus .benefits-icons {
   animation: orbit 4s linear infinite;
 }
 
