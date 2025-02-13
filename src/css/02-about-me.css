@@ -111,7 +111,7 @@
 .about-skills-container {
   display: flex;
   flex-wrap: nowrap;
-  align-items: stretch;
+  align-items: center;
   gap: 55px;
 }
 
@@ -160,7 +160,7 @@
   display: block;
   border: none;
   width: 28px;
-  height: 130px;
+  height: 28px;
   position: relative;
 }
 
@@ -176,7 +176,7 @@
 }
 
 #about-me .swiper-button-next:hover > svg {
-  stroke: var(--white);
+  stroke: #fafafa;
 }
 
 /*------------------ Adaptive Tablet (768px)-----------------*/
@@ -239,7 +239,7 @@
 
   #about-me .swiper-button-next {
     width: 40px;
-    height: 200px;
+    height: 40px;
   }
 
   #about-me .swiper-button-next > svg {
