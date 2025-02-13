@@ -25,9 +25,18 @@ const fillModalText = (title, message) => {
   cooperativeModalCommentEl.innerHTML = message;
 };
 
+const disableScroll = () => {
+  document.body.style.overflow = 'hidden';
+};
+
+const enableScroll = () => {
+  document.body.style.overflow = '';
+};
+
 const onBtnCloseClick = event => {
   if (event.target.hasAttribute('data-close') || event.key === 'Escape') {
     cooperativeModalWindowEL.classList.remove('is-open');
+    enableScroll();
 
     cooperativeModalWindowEL.removeEventListener('click', onBtnCloseClick);
     document.removeEventListener('keydown', onBtnCloseClick);
@@ -49,6 +58,7 @@ const onFormCooperativeSubmit = async event => {
     fillModalText(title, message);
 
     cooperativeModalWindowEL.classList.add('is-open');
+    disableScroll();
 
     cooperativeModalWindowEL.addEventListener('click', onBtnCloseClick);
     document.addEventListener('keydown', onBtnCloseClick);

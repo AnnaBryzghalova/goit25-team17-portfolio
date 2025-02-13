@@ -55,6 +55,13 @@
   height: 195px;
 }
 
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  box-shadow: 0px 0px 8px #fafafa66;
+}
+
 @media screen and (min-width: 768px) {
   .projects-item-part-one {
     padding: 64px;
