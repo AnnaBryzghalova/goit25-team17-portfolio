@@ -10,7 +10,6 @@ export function initSwiper({
   const swiperParameters = {
     direction: 'horizontal',
     allowTouchMove: true,
-    grabCursor: true,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
