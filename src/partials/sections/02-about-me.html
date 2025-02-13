@@ -11,7 +11,35 @@
           client's unique personality.
         </p>
       </div>
-      <div class="about-story-block-photo"></div>
+      <div class="about-story-block-photo no-overflow">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /images/about-me/about-me-mob.png    1x,
+              /images/about-me/about-me-mob@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /images/about-me/about-me-tab.png    1x,
+              /images/about-me/about-me-tab@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              /images/about-me/about-me-desk.png    1x,
+              /images/about-me/about-me-desk@2x.png 2x
+            "
+          />
+          <img
+            src="/images/about-me/about-me-mob.png"
+            alt="Jefferson's photo"
+          />
+        </picture>
+      </div>
     </div>
 
     <ul class="about-accordion accordion">

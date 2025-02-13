@@ -259,6 +259,10 @@
     min-width: calc((100% - 16px) / 2);
   }
 
+  .about-story-block-photo img {
+    height: 700px;
+  }
+
   /* Accordion */
 
   .about-accordion {
